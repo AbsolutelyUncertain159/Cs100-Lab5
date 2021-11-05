@@ -13,7 +13,7 @@ class Sub : public Base
         Sub(){}
         Sub(Base* val1, Base* val2) : Base() {this->value1 = val1; this->value2 = val2; }
         virtual double evaluate() { return value1->evaluate() -  value2->evaluate(); }
-        virtual string stringify() { return value1->stringify() + "-" + value2->stringify(); }
+        virtual string stringify() { return "(" + value1->stringify() + "-" + value2->stringify() + ")"; }
 };
 
 
